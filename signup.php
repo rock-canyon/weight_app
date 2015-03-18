@@ -99,13 +99,15 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 </div><!-- /container -->
 <?php
 	if ($success) {
+	
+		echo '<script>swal("ユーザー登録が完了しました。", "", "success",
+			function() { location.href="login.php"; 
+		});</script>';
 	/*
-		echo '<script>swal("ユーザー登録が完了しました。", "", "success");
-			  location.href="login.php";</script>';
-	*/
 		echo '<script>alert("ユーザー登録が完了しました。");
 			  location.href="login.php";</script>';
 	}
+	*/
 ?>
 </body>
 </html>
