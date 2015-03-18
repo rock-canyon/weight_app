@@ -134,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 			text: "",
 			type: "success"
 		}, function() {
-			location.href="login.php";
+			location.href="index.php";
 		});</script>';
 	/*
 		echo '<script>alert("設定変更が完了しました。");
