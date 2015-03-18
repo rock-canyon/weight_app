@@ -129,13 +129,13 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 </div><!-- container -->
 <?php
 	if ($success) {
+		echo '<script>swal("設定変更が完了しました。", "", "success",
+			function() { location.href="login.php"; 
+		});</script>';
 	/*
-		echo '<script>swal("設定変更が完了しました。", "", "success");
-			  	  location.href="index.php";
-			  </script>';
-	*/
 		echo '<script>alert("設定変更が完了しました。");
 			  location.href="index.php";</script>';
+	*/
 	}
 ?>
 </body>
