@@ -94,13 +94,14 @@ if ($_SERVER['REQUEST_METHOD'] != "POST") {
 	
 	<div id="footer">Copyright 2015 Masayoshi Iwatani All rights reserved.</div><!-- /footer -->
 <?php
+	if ($success) {
+		echo '<script>swal("体重の登録が完了しました。", "", "success",
+			function() { location.href="login.php"; 
+		});</script>';
 	/*
 	if ($success) {
-		echo '<script>swal("体重の登録が完了しました。", "", "success");</script>';
-	}
-	*/
-	if ($success) {
 		echo '<script>alert("体重の登録が完了しました。");</script>';
+	*/
 	}
 ?>
 </body>
