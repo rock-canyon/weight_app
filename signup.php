@@ -100,8 +100,12 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 <?php
 	if ($success) {
 	
-		echo '<script>swal("ユーザー登録が完了しました。", "", "success",
-			function() { location.href="login.php"; 
+		echo '<script>swal({
+			title: "新規ユーザー登録が完了しました。",
+			text: "",
+			type: "success"
+		}, function() {
+			location.href="login.php";
 		});</script>';
 	/*
 		echo '<script>alert("ユーザー登録が完了しました。");
