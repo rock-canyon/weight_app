@@ -129,8 +129,12 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 </div><!-- container -->
 <?php
 	if ($success) {
-		echo '<script>swal("設定変更が完了しました。", "", "success",
-			function() { location.href="login.php"; 
+		echo '<script>swal({
+			title: "設定変更が完了しました。",
+			text: "",
+			type: "success"
+		}, function() {
+			location.href="login.php";
 		});</script>';
 	/*
 		echo '<script>alert("設定変更が完了しました。");
